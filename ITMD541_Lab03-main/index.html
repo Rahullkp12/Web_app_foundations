@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="tipForm">
+            <p>ITMD 541 - Lab 03 - Rahul Poojari<p>
+            <h1>Tip Calculator</h1>
+            <label for="billTotal">Bill Total:</label>
+            <input type="text" id="billTotal" name="billTotal" required>
+
+            <label for="tipRange">Select Tip Percentage:</label>
+            <input type="range" id="tipRange" name="tipRange" min="0" max="100" value="0">
+
+            <label for="tipPercentage">Tip Percentage:</label>
+            <input type="text" id="tipPercentage" name="tipPercentage" disabled>
+
+            <label for="tipSlider">Tip Amount:</label>
+            <input type="text" id="tipAmount" name="tipAmount" disabled>
+
+            <label for="totalWithTip">Total Bill with Tip:</label>
+            <input type="text" id="totalWithTip" name="totalWithTip" disabled>
+
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
