@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"> 
+    <title> Weather Dashboard</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <div id="search" class="search">
+                <input type="text" id="locationInput" placeholder="Enter location">
+                <button id="searchButton">Search</button>
+                <ul></ul>
+            </div>
+            <button onclick="getLocation()" class="location-button">My Location</button>
+        </aside>
+
+        <main class="main">
+            <header>
+                <h1>Weather Forecast</h1>
+                <br>
+            </header>
+            <div id="result" class="cards"></div>
+        </main>
+    </div>
+
+    <script src="./hs.js"></script>
+</body>
+
+</html>

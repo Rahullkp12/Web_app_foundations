@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+  --primary-clr: rgb(214, 96, 28);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 100px;
+  padding: 50px;
+  background-image: url('./cd.jpg');
+  background-size: cover;
+  background-position: center;
+}
+img {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  height: 60vh;
+  min-width: 900px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 70px; /* Adjust the top margin to move the wrapper lower */
+}
+/* .sidebar {
+  width: 30%;
+  min-width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.815);
+} */
+
+.sidebar {
+  width: 30%;
+  min-width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.815);
+  box-shadow: 10px 0 15px 5px rgba(0, 0, 0, 1); /* Adjust the shadow values as needed */
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  position: relative;
+}
+.search input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ced4da;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 5px;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #495057;
+}
+.search input:focus {
+  outline: none;
+  border: 1px solid var(--primary-clr);
+}
+.search button {
+  min-width: 60px;
+  height: 40px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: var(--primary-clr);
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+.search button:hover { 
+  background-color: rgb(146, 9, 9); /* Example: Darken the color on hover */
+  transition: background-color 1s;
+}
+
+.location-button {
+  background-color: var(--primary-clr);
+  color: white;
+  border: 1px solid var(--primary-clr);
+  border-radius: 8px; /* Adjust the border-radius value as needed */
+  padding: 8px 16px;
+  cursor: pointer;
+  outline: none; /* Remove the default button focus outline */
+}
+
+.location-button:hover { 
+  background-color: rgb(146, 9, 9); /* Example: Darken the color on hover */
+  transition: background-color 1.5s;
+}
+
+/* Add a border after the header */
+/* header {
+  border-bottom: 3px solid var(--primary-clr); /* Adjust the border properties as needed
+  padding-bottom: 10px; /* Add space after the header 
+  text-align: center;
+} */
+
+header {
+  position: relative;
+  text-align: center;
+}
+
+header::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 20%; /* Adjust as needed based on your design */
+  width: 60%; /* Set the width to 60% of the header */
+  height: 3px;
+  background-color: var(--primary-clr); /* Adjust the color as needed */
+}
+
+/* Styling for weather data containers */
+.today_weather_data,
+.tomorrow_weather_data {
+  margin-bottom: 20px; /* Add space between weather data */
+  border: 3px solid rgba(214, 96, 28, 0.8); /* Border for the weather data */
+  padding: 10px; /* Padding for the weather data */
+  border-radius: 10px; /* Border radius for rounded corners */
+  background-color: rgba(214, 96, 28, 0.7);
+  width: calc(50% - 10px);
+}
+
+.today_weather_data h2,
+.tomorrow_weather_data h2 {
+  text-align: center; /* Center align the text */
+  margin-bottom: 20px; /* Add space after the <h2> element */
+}
+
+.weather-info {
+  display: flex; /* Use flexbox */
+  justify-content: space-between; /* Place items with space between them */
+}
+
+
+.cards {
+  margin-top: 20px; /* Add space on top */
+}
+
+.main{
+    width: 100%;
+    min-width: 200px;
+    padding: 20px 40px;
+    position: relative;
+    padding-bottom: 90px;
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
+
+@media (max-width: 480px) { 
+    
+  body {
+    /* display: block; */
+    padding: 80px;
+  }
+
+  .wrapper {
+    display: block;
+    width: 100%;
+    min-width: 414px;
+  }
+
+  .sidebar {
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+  .main {
+    display: block;
+    width: 100%;
+    padding: 0px;
+  }
+  .location {
+    display: flex;
+    padding: 20px;
+    margin-top: -36px;
+  }
+
+  .weather-icon {
+    width: 46%;
+    margin-bottom: 20px;
+  }
+
+  *{
+    box-sizing: unset;
+  }
+
+  .mobile-divider {
+    padding: 20px;
+  }
+
+  .mobile-main {
+    padding: 20px;
+  }
+
+  .credits {
+    position: unset;
+    text-align: end;
+  }
+
+}
